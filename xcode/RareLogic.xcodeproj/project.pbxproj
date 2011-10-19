@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D72CD38144DF7CE00AFC947 /* RareLogicTestAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D72CCFE144DF25400AFC947 /* RareLogicTestAppViewController.xib */; };
+		4D72CD39144DF7CE00AFC947 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D72CD03144DF26B00AFC947 /* MainWindow.xib */; };
+		4D72CD3E144DFE1700AFC947 /* RareLogicTestAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CCFD144DF25300AFC947 /* RareLogicTestAppViewController.m */; };
+		4D72CD43144E0D5800AFC947 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD07144DF3AE00AFC947 /* NSObject+SBJson.m */; };
+		4D72CD44144E0D5800AFC947 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD0A144DF3AE00AFC947 /* SBJsonParser.m */; };
+		4D72CD45144E0D5800AFC947 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD0C144DF3AE00AFC947 /* SBJsonStreamParser.m */; };
+		4D72CD46144E0D5800AFC947 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD0E144DF3AE00AFC947 /* SBJsonStreamParserAccumulator.m */; };
+		4D72CD47144E0D5800AFC947 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD10144DF3AE00AFC947 /* SBJsonStreamParserAdapter.m */; };
+		4D72CD48144E0D5800AFC947 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD12144DF3AE00AFC947 /* SBJsonStreamParserState.m */; };
+		4D72CD49144E0D5800AFC947 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD14144DF3AE00AFC947 /* SBJsonStreamWriter.m */; };
+		4D72CD4A144E0D5900AFC947 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD16144DF3AE00AFC947 /* SBJsonStreamWriterAccumulator.m */; };
+		4D72CD4B144E0D5900AFC947 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD18144DF3AE00AFC947 /* SBJsonStreamWriterState.m */; };
+		4D72CD4C144E0D5900AFC947 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD1A144DF3AE00AFC947 /* SBJsonTokeniser.m */; };
+		4D72CD4D144E0D5900AFC947 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD1C144DF3AE00AFC947 /* SBJsonUTF8Stream.m */; };
+		4D72CD4E144E0D5900AFC947 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD1E144DF3AE00AFC947 /* SBJsonWriter.m */; };
+		A9CF77CA13FC30ED00B86962 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E5866413F970B3002C692D /* Reachability.m */; };
+		A9CF77CB13FC30ED00B86962 /* RlEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5213F5C34F00B5169E /* RlEvent.m */; };
+		A9CF77CC13FC30ED00B86962 /* RareLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5313F5C34F00B5169E /* RareLogic.m */; };
+		A9D0B92613F9955E0060A1A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D0B92513F9955E0060A1A0 /* main.m */; };
+		A9D0B92A13F9959B0060A1A0 /* RareLogicTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D0B92813F9959B0060A1A0 /* RareLogicTestAppDelegate.m */; };
+		A9D0B99713F997530060A1A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		A9D0B99913F997600060A1A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D0B99813F997600060A1A0 /* SystemConfiguration.framework */; };
+		A9D0B99B13F997600060A1A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D0B99A13F997600060A1A0 /* UIKit.framework */; };
+		A9D0BA9F13F99DC30060A1A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E5866413F970B3002C692D /* Reachability.m */; };
+		A9D0BAA013F99DC30060A1A0 /* RlEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5213F5C34F00B5169E /* RlEvent.m */; };
+		A9D0BAA113F99DC30060A1A0 /* RareLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5313F5C34F00B5169E /* RareLogic.m */; };
+		A9D0BAB513F99DD80060A1A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D0B99813F997600060A1A0 /* SystemConfiguration.framework */; };
+		A9D0BAB713F99DE80060A1A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9CF77ED13FC32C400B86962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D0BA8513F99D520060A1A0;
+			remoteInfo = RareLogicTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D72CCFC144DF25300AFC947 /* RareLogicTestAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RareLogicTestAppViewController.h; sourceTree = "<group>"; };
+		4D72CCFD144DF25300AFC947 /* RareLogicTestAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RareLogicTestAppViewController.m; sourceTree = "<group>"; };
+		4D72CCFE144DF25400AFC947 /* RareLogicTestAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RareLogicTestAppViewController.xib; sourceTree = "<group>"; };
+		4D72CD03144DF26B00AFC947 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		4D72CD06144DF3AE00AFC947 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		4D72CD07144DF3AE00AFC947 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		4D72CD08144DF3AE00AFC947 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		4D72CD09144DF3AE00AFC947 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		4D72CD0A144DF3AE00AFC947 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		4D72CD0B144DF3AE00AFC947 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		4D72CD0C144DF3AE00AFC947 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		4D72CD0D144DF3AE00AFC947 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		4D72CD0E144DF3AE00AFC947 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		4D72CD0F144DF3AE00AFC947 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		4D72CD10144DF3AE00AFC947 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		4D72CD11144DF3AE00AFC947 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		4D72CD12144DF3AE00AFC947 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		4D72CD13144DF3AE00AFC947 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		4D72CD14144DF3AE00AFC947 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		4D72CD15144DF3AE00AFC947 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		4D72CD16144DF3AE00AFC947 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		4D72CD17144DF3AE00AFC947 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		4D72CD18144DF3AE00AFC947 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		4D72CD19144DF3AE00AFC947 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		4D72CD1A144DF3AE00AFC947 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		4D72CD1B144DF3AE00AFC947 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		4D72CD1C144DF3AE00AFC947 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		4D72CD1D144DF3AE00AFC947 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		4D72CD1E144DF3AE00AFC947 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		A942AE4F13F5C34F00B5169E /* RlEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RlEvent.h; sourceTree = "<group>"; };
+		A942AE5013F5C34F00B5169E /* RareLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RareLogic.h; sourceTree = "<group>"; };
+		A942AE5213F5C34F00B5169E /* RlEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RlEvent.m; sourceTree = "<group>"; };
+		A942AE5313F5C34F00B5169E /* RareLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RareLogic.m; sourceTree = "<group>"; };
+		A942AE6513F5C38400B5169E /* RareLogic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RareLogic-Info.plist"; sourceTree = "<group>"; };
+		A9D0B92113F995480060A1A0 /* RareLogicTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RareLogicTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D0B92513F9955E0060A1A0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9D0B92813F9959B0060A1A0 /* RareLogicTestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RareLogicTestAppDelegate.m; sourceTree = "<group>"; };
+		A9D0B92913F9959B0060A1A0 /* RareLogicTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RareLogicTestAppDelegate.h; sourceTree = "<group>"; };
+		A9D0B92B13F995AE0060A1A0 /* RareLogicTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RareLogicTest-Info.plist"; sourceTree = "<group>"; };
+		A9D0B99813F997600060A1A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A9D0B99A13F997600060A1A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9D0BA8613F99D520060A1A0 /* RareLogicTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RareLogicTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D0BADA13F99EB80060A1A0 /* RareLogicTesting-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RareLogicTesting-Info.plist"; sourceTree = "<group>"; };
+		A9E5866313F970B3002C692D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A9E5866413F970B3002C692D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* RareLogic_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RareLogic_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9D0B91F13F995480060A1A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D0B99713F997530060A1A0 /* Foundation.framework in Frameworks */,
+				A9D0B99913F997600060A1A0 /* SystemConfiguration.framework in Frameworks */,
+				A9D0B99B13F997600060A1A0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D0BA8313F99D520060A1A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D0BAB513F99DD80060A1A0 /* SystemConfiguration.framework in Frameworks */,
+				A9D0BAB713F99DE80060A1A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9D0B92113F995480060A1A0 /* RareLogicTest.app */,
+				A9D0BA8613F99D520060A1A0 /* RareLogicTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* RareLogic */ = {
+			isa = PBXGroup;
+			children = (
+				A942AE4E13F5C34F00B5169E /* include */,
+				A942AE5113F5C34F00B5169E /* src */,
+				A9D0B8AD13F993F50060A1A0 /* test */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				A942AE6513F5C38400B5169E /* RareLogic-Info.plist */,
+			);
+			name = RareLogic;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				A9D0B99813F997600060A1A0 /* SystemConfiguration.framework */,
+				A9D0B99A13F997600060A1A0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* RareLogic_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		4D72CD05144DF3AE00AFC947 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				4D72CD06144DF3AE00AFC947 /* NSObject+SBJson.h */,
+				4D72CD07144DF3AE00AFC947 /* NSObject+SBJson.m */,
+				4D72CD08144DF3AE00AFC947 /* SBJson.h */,
+				4D72CD09144DF3AE00AFC947 /* SBJsonParser.h */,
+				4D72CD0A144DF3AE00AFC947 /* SBJsonParser.m */,
+				4D72CD0B144DF3AE00AFC947 /* SBJsonStreamParser.h */,
+				4D72CD0C144DF3AE00AFC947 /* SBJsonStreamParser.m */,
+				4D72CD0D144DF3AE00AFC947 /* SBJsonStreamParserAccumulator.h */,
+				4D72CD0E144DF3AE00AFC947 /* SBJsonStreamParserAccumulator.m */,
+				4D72CD0F144DF3AE00AFC947 /* SBJsonStreamParserAdapter.h */,
+				4D72CD10144DF3AE00AFC947 /* SBJsonStreamParserAdapter.m */,
+				4D72CD11144DF3AE00AFC947 /* SBJsonStreamParserState.h */,
+				4D72CD12144DF3AE00AFC947 /* SBJsonStreamParserState.m */,
+				4D72CD13144DF3AE00AFC947 /* SBJsonStreamWriter.h */,
+				4D72CD14144DF3AE00AFC947 /* SBJsonStreamWriter.m */,
+				4D72CD15144DF3AE00AFC947 /* SBJsonStreamWriterAccumulator.h */,
+				4D72CD16144DF3AE00AFC947 /* SBJsonStreamWriterAccumulator.m */,
+				4D72CD17144DF3AE00AFC947 /* SBJsonStreamWriterState.h */,
+				4D72CD18144DF3AE00AFC947 /* SBJsonStreamWriterState.m */,
+				4D72CD19144DF3AE00AFC947 /* SBJsonTokeniser.h */,
+				4D72CD1A144DF3AE00AFC947 /* SBJsonTokeniser.m */,
+				4D72CD1B144DF3AE00AFC947 /* SBJsonUTF8Stream.h */,
+				4D72CD1C144DF3AE00AFC947 /* SBJsonUTF8Stream.m */,
+				4D72CD1D144DF3AE00AFC947 /* SBJsonWriter.h */,
+				4D72CD1E144DF3AE00AFC947 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		A942AE4E13F5C34F00B5169E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A942AE4F13F5C34F00B5169E /* RlEvent.h */,
+				A942AE5013F5C34F00B5169E /* RareLogic.h */,
+			);
+			name = include;
+			path = ../include;
+			sourceTree = SOURCE_ROOT;
+		};
+		A942AE5113F5C34F00B5169E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4D72CD05144DF3AE00AFC947 /* JSON */,
+				A9E5866313F970B3002C692D /* Reachability.h */,
+				A9E5866413F970B3002C692D /* Reachability.m */,
+				A942AE5213F5C34F00B5169E /* RlEvent.m */,
+				A942AE5313F5C34F00B5169E /* RareLogic.m */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		A9D0B8AD13F993F50060A1A0 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				A9D0B92B13F995AE0060A1A0 /* RareLogicTest-Info.plist */,
+				A9D0BADA13F99EB80060A1A0 /* RareLogicTesting-Info.plist */,
+				A9D0B92513F9955E0060A1A0 /* main.m */,
+				A9D0B92913F9959B0060A1A0 /* RareLogicTestAppDelegate.h */,
+				A9D0B92813F9959B0060A1A0 /* RareLogicTestAppDelegate.m */,
+				4D72CCFC144DF25300AFC947 /* RareLogicTestAppViewController.h */,
+				4D72CCFD144DF25300AFC947 /* RareLogicTestAppViewController.m */,
+				4D72CCFE144DF25400AFC947 /* RareLogicTestAppViewController.xib */,
+				4D72CD03144DF26B00AFC947 /* MainWindow.xib */,
+			);
+			name = test;
+			path = ../test;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9D0B92013F995480060A1A0 /* RareLogicTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D0B92713F9955E0060A1A0 /* Build configuration list for PBXNativeTarget "RareLogicTesting" */;
+			buildPhases = (
+				A9D0B91D13F995480060A1A0 /* Resources */,
+				A9D0B91E13F995480060A1A0 /* Sources */,
+				A9D0B91F13F995480060A1A0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9CF77EE13FC32C400B86962 /* PBXTargetDependency */,
+			);
+			name = RareLogicTesting;
+			productName = RareLogicTest;
+			productReference = A9D0B92113F995480060A1A0 /* RareLogicTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9D0BA8513F99D520060A1A0 /* RareLogicTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D0BA8A13F99D520060A1A0 /* Build configuration list for PBXNativeTarget "RareLogicTest" */;
+			buildPhases = (
+				A9D0BA8113F99D520060A1A0 /* Resources */,
+				A9D0BA8213F99D520060A1A0 /* Sources */,
+				A9D0BA8313F99D520060A1A0 /* Frameworks */,
+				A9D0BA8413F99D520060A1A0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RareLogicTest;
+			productName = RareLogicTest;
+			productReference = A9D0BA8613F99D520060A1A0 /* RareLogicTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "RareLogic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* RareLogic */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9D0B92013F995480060A1A0 /* RareLogicTesting */,
+				A9D0BA8513F99D520060A1A0 /* RareLogicTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9D0B91D13F995480060A1A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D72CD38144DF7CE00AFC947 /* RareLogicTestAppViewController.xib in Resources */,
+				4D72CD39144DF7CE00AFC947 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D0BA8113F99D520060A1A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9D0BA8413F99D520060A1A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9D0B91E13F995480060A1A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D72CD43144E0D5800AFC947 /* NSObject+SBJson.m in Sources */,
+				4D72CD44144E0D5800AFC947 /* SBJsonParser.m in Sources */,
+				4D72CD45144E0D5800AFC947 /* SBJsonStreamParser.m in Sources */,
+				4D72CD46144E0D5800AFC947 /* SBJsonStreamParserAccumulator.m in Sources */,
+				4D72CD47144E0D5800AFC947 /* SBJsonStreamParserAdapter.m in Sources */,
+				4D72CD48144E0D5800AFC947 /* SBJsonStreamParserState.m in Sources */,
+				4D72CD49144E0D5800AFC947 /* SBJsonStreamWriter.m in Sources */,
+				4D72CD4A144E0D5900AFC947 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				4D72CD4B144E0D5900AFC947 /* SBJsonStreamWriterState.m in Sources */,
+				4D72CD4C144E0D5900AFC947 /* SBJsonTokeniser.m in Sources */,
+				4D72CD4D144E0D5900AFC947 /* SBJsonUTF8Stream.m in Sources */,
+				4D72CD4E144E0D5900AFC947 /* SBJsonWriter.m in Sources */,
+				A9D0B92613F9955E0060A1A0 /* main.m in Sources */,
+				4D72CD3E144DFE1700AFC947 /* RareLogicTestAppViewController.m in Sources */,
+				A9D0B92A13F9959B0060A1A0 /* RareLogicTestAppDelegate.m in Sources */,
+				A9CF77CA13FC30ED00B86962 /* Reachability.m in Sources */,
+				A9CF77CB13FC30ED00B86962 /* RlEvent.m in Sources */,
+				A9CF77CC13FC30ED00B86962 /* RareLogic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D0BA8213F99D520060A1A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D0BA9F13F99DC30060A1A0 /* Reachability.m in Sources */,
+				A9D0BAA013F99DC30060A1A0 /* RlEvent.m in Sources */,
+				A9D0BAA113F99DC30060A1A0 /* RareLogic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9CF77EE13FC32C400B86962 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9D0BA8513F99D520060A1A0 /* RareLogicTest */;
+			targetProxy = A9CF77ED13FC32C400B86962 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A9D0B92313F995480060A1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "../test/RareLogicTesting-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = RareLogicTest;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9D0B92413F995480060A1A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "../test/RareLogicTesting-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = RareLogicTest;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A9D0BA8813F99D520060A1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "../test/RareLogicTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = RareLogicTest;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A9D0BA8913F99D520060A1A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "../test/RareLogicTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = RareLogicTest;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "RareLogic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D0B92713F9955E0060A1A0 /* Build configuration list for PBXNativeTarget "RareLogicTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D0B92313F995480060A1A0 /* Debug */,
+				A9D0B92413F995480060A1A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D0BA8A13F99D520060A1A0 /* Build configuration list for PBXNativeTarget "RareLogicTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D0BA8813F99D520060A1A0 /* Debug */,
+				A9D0BA8913F99D520060A1A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
