@@ -52,8 +52,8 @@
 - (IBAction)click {
     RlEvent* event = [[RlEvent alloc] init];
     
-    [event set: @"action" andName: @"type" withStringValue: @"click"];
-    [event set: @"action" andName: @"screen" withStringValue: @"Main Screen"];
+    [event set: @"content" andName: @"page" withStringValue: @"Blog Homepage"];
+    [event set: @"content" andName: @"category" withStringValue: @"Blog Pages"];
     [event record];
     [event release];
 }

@@ -12,7 +12,7 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [RareLogic sharedInstanceWithProfile: @"rl-1234-1"];
+    [RareLogic sharedInstanceWithProfile: @"rarelogic.com"];
     
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

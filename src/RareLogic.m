@@ -4,11 +4,11 @@
 #import "RareLogic.h"
 #import "Reachability.h"
 #import "SBJson.h"
+#import "NSData+Base64.h"
 #import <UIKit/UIKit.h>
 
 #define FILE_NAME @"RlEvent"
 #define RARELOGIC_API_HOST_NAME @"d.rare.io"
-#define RARELOGIC_API_PORT 8080
 #define VERSION @"1.0"
 
 
@@ -96,7 +96,7 @@ static RareLogic* _instance;
 - (void)record:(RlEvent*)event {
 	RlEvent* copy = [event copy];
     
-	[copy set:@"rl" andName:@"mobiletime" withNumberValue: [RareLogic getTimestamp]];
+	[copy set:@"rl" andName:@"timestamp" withNumberValue: [RareLogic getTimestamp]];
 	
 	@synchronized (_queue) {
 		[_queue addObject:copy];
@@ -154,9 +154,7 @@ static RareLogic* _instance;
 	}
 	
 	UIDevice* device = [UIDevice currentDevice];
-	NSString* baseURL = [NSString stringWithFormat:@"http://%@:%d/store", 
-                         RARELOGIC_API_HOST_NAME, 
-                         RARELOGIC_API_PORT];
+	NSString* baseURL = [NSString stringWithFormat:@"http://%@/store", RARELOGIC_API_HOST_NAME];
 	NSString* clientInfo = [[NSString stringWithFormat:@"Mobile(%@; %@; %@)", 
                              [device model], 
                              [device systemName],
@@ -171,10 +169,11 @@ static RareLogic* _instance;
                       clientInfo];
 	NSURL* url = [NSURL URLWithString:path];
 	NSString* body = [sending JSONRepresentation];
+    NSData* postData = [body dataUsingEncoding: NSUTF8StringEncoding];
 	NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
     
-	[request setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
-	[request setHTTPMethod:@"POST"];
+	[request setHTTPBody: [[postData base64EncodedString] dataUsingEncoding:NSUTF8StringEncoding]];
+	[request setHTTPMethod: @"POST"];
 	
 	NSHTTPURLResponse* response = nil;
 	NSError* error = nil;
@@ -186,18 +185,18 @@ static RareLogic* _instance;
             NSLog(@"[RareLogic] Connection failed: %@", [error localizedDescription]);
         }
 		
-		@synchronized (_queue) {
-			NSArray* new = [_queue copy];
-            
-			[_queue removeAllObjects];
-			[_queue addObjectsFromArray: sending];
-			[_queue addObjectsFromArray: new];
-            
-			while (_queue.count > _queueDepth)
-				[_queue removeObjectAtIndex: 0];
-            
-			[new release];
-		}
+//		@synchronized (_queue) {
+//			NSArray* new = [_queue copy];
+//            
+//			[_queue removeAllObjects];
+//			[_queue addObjectsFromArray: sending];
+//			[_queue addObjectsFromArray: new];
+//            
+//			while (_queue.count > _queueDepth)
+//				[_queue removeObjectAtIndex: 0];
+//            
+//			[new release];
+//		}
 	}
 	
 	[sending release];

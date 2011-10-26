@@ -22,6 +22,7 @@
 		4D72CD4C144E0D5900AFC947 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD1A144DF3AE00AFC947 /* SBJsonTokeniser.m */; };
 		4D72CD4D144E0D5900AFC947 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD1C144DF3AE00AFC947 /* SBJsonUTF8Stream.m */; };
 		4D72CD4E144E0D5900AFC947 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD1E144DF3AE00AFC947 /* SBJsonWriter.m */; };
+		4DECE40514588A0200F73619 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DECE40414588A0200F73619 /* NSData+Base64.m */; };
 		A9CF77CA13FC30ED00B86962 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E5866413F970B3002C692D /* Reachability.m */; };
 		A9CF77CB13FC30ED00B86962 /* RlEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5213F5C34F00B5169E /* RlEvent.m */; };
 		A9CF77CC13FC30ED00B86962 /* RareLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5313F5C34F00B5169E /* RareLogic.m */; };
@@ -77,6 +78,8 @@
 		4D72CD1C144DF3AE00AFC947 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		4D72CD1D144DF3AE00AFC947 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		4D72CD1E144DF3AE00AFC947 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		4DECE40314588A0200F73619 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		4DECE40414588A0200F73619 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		A942AE4F13F5C34F00B5169E /* RlEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RlEvent.h; sourceTree = "<group>"; };
 		A942AE5013F5C34F00B5169E /* RareLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RareLogic.h; sourceTree = "<group>"; };
 		A942AE5213F5C34F00B5169E /* RlEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RlEvent.m; sourceTree = "<group>"; };
@@ -193,6 +196,15 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		4DECE40214588A0200F73619 /* NSData_Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				4DECE40314588A0200F73619 /* NSData+Base64.h */,
+				4DECE40414588A0200F73619 /* NSData+Base64.m */,
+			);
+			path = NSData_Base64;
+			sourceTree = "<group>";
+		};
 		A942AE4E13F5C34F00B5169E /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +218,7 @@
 		A942AE5113F5C34F00B5169E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4DECE40214588A0200F73619 /* NSData_Base64 */,
 				4D72CD05144DF3AE00AFC947 /* JSON */,
 				A9E5866313F970B3002C692D /* Reachability.h */,
 				A9E5866413F970B3002C692D /* Reachability.m */,
@@ -359,6 +372,7 @@
 				A9CF77CA13FC30ED00B86962 /* Reachability.m in Sources */,
 				A9CF77CB13FC30ED00B86962 /* RlEvent.m in Sources */,
 				A9CF77CC13FC30ED00B86962 /* RareLogic.m in Sources */,
+				4DECE40514588A0200F73619 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
