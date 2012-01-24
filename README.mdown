@@ -1,0 +1,45 @@
+RareLogic iOS API
+=================
+
+[RareLogic](http://rarelogic.com) provides real-time customer analytics for all of your digital properties, letting you measure the success or failure of intricate customer interactions with your business.
+
+To get started with the RareLogic iOS API clone the git repository:
+
+    git clone http://github.com/rarelogic/rl-ios-api.git
+
+Copy the contents of the `src` and `include` directories into your project folder, and update your project to include all of the files.
+
+Initialize the RareLogic API
+============================
+
+The first step in using the RareLogic iOS API is to initialize the `RareLogic` object. It is recommended that you do this in `application:didFinishLaunchingWithOptions` inside the Application delegate.
+
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+        [RareLogic sharedInstanceWithProfile: @"your_profile_id"];
+    
+        self.window.rootViewController = self.viewController;
+        [self.window makeKeyAndVisible];
+	
+        return YES;
+    }
+
+This will initialize the RareLogic API with the profile in which all events will be tracked.
+
+Record and Track Events
+=======================
+
+To record an event using the RareLogic API you initialize a new instance of the RareLogicEvent class and set the properties that you wish to record with the event. For example:
+
+    - (IBAction)click {
+        RareLogicEvent* event = [[RareLogicEvent alloc] init];
+    
+        [event set: @"action" andName: @"type" withStringValue: @"click"];
+        [event set: @"content" andName: @"screen" withStringValue: @"Home Screen"];
+        [event set: @"content" andName: @"control" withStringValue: @"Menu"];
+        [event record];
+        [event release];
+    }
+
+You must specify both the family and attribute name, as well as the value to be tracked when calling the `set` method. The family and attribute name should match the attributes that you have defined in your RareLogic profile.
+
+You call the `record` method when you have finished adding attributes to the event and you want the event tracked within RareLogic.
