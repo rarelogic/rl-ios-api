@@ -24,7 +24,7 @@
 		4D72CD4E144E0D5900AFC947 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D72CD1E144DF3AE00AFC947 /* SBJsonWriter.m */; };
 		4DECE40514588A0200F73619 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DECE40414588A0200F73619 /* NSData+Base64.m */; };
 		A9CF77CA13FC30ED00B86962 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E5866413F970B3002C692D /* Reachability.m */; };
-		A9CF77CB13FC30ED00B86962 /* RlEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5213F5C34F00B5169E /* RlEvent.m */; };
+		A9CF77CB13FC30ED00B86962 /* RareLogicEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5213F5C34F00B5169E /* RareLogicEvent.m */; };
 		A9CF77CC13FC30ED00B86962 /* RareLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5313F5C34F00B5169E /* RareLogic.m */; };
 		A9D0B92613F9955E0060A1A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D0B92513F9955E0060A1A0 /* main.m */; };
 		A9D0B92A13F9959B0060A1A0 /* RareLogicTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D0B92813F9959B0060A1A0 /* RareLogicTestAppDelegate.m */; };
@@ -32,7 +32,7 @@
 		A9D0B99913F997600060A1A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D0B99813F997600060A1A0 /* SystemConfiguration.framework */; };
 		A9D0B99B13F997600060A1A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D0B99A13F997600060A1A0 /* UIKit.framework */; };
 		A9D0BA9F13F99DC30060A1A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E5866413F970B3002C692D /* Reachability.m */; };
-		A9D0BAA013F99DC30060A1A0 /* RlEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5213F5C34F00B5169E /* RlEvent.m */; };
+		A9D0BAA013F99DC30060A1A0 /* RareLogicEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5213F5C34F00B5169E /* RareLogicEvent.m */; };
 		A9D0BAA113F99DC30060A1A0 /* RareLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = A942AE5313F5C34F00B5169E /* RareLogic.m */; };
 		A9D0BAB513F99DD80060A1A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D0B99813F997600060A1A0 /* SystemConfiguration.framework */; };
 		A9D0BAB713F99DE80060A1A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
@@ -80,9 +80,9 @@
 		4D72CD1E144DF3AE00AFC947 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		4DECE40314588A0200F73619 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		4DECE40414588A0200F73619 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		A942AE4F13F5C34F00B5169E /* RlEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RlEvent.h; sourceTree = "<group>"; };
+		A942AE4F13F5C34F00B5169E /* RareLogicEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; path = RareLogicEvent.h; sourceTree = "<group>"; };
 		A942AE5013F5C34F00B5169E /* RareLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RareLogic.h; sourceTree = "<group>"; };
-		A942AE5213F5C34F00B5169E /* RlEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RlEvent.m; sourceTree = "<group>"; };
+		A942AE5213F5C34F00B5169E /* RareLogicEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RareLogicEvent.m; sourceTree = "<group>"; };
 		A942AE5313F5C34F00B5169E /* RareLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RareLogic.m; sourceTree = "<group>"; };
 		A942AE6513F5C38400B5169E /* RareLogic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RareLogic-Info.plist"; sourceTree = "<group>"; };
 		A9D0B92113F995480060A1A0 /* RareLogicTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RareLogicTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,7 +208,7 @@
 		A942AE4E13F5C34F00B5169E /* include */ = {
 			isa = PBXGroup;
 			children = (
-				A942AE4F13F5C34F00B5169E /* RlEvent.h */,
+				A942AE4F13F5C34F00B5169E /* RareLogicEvent.h */,
 				A942AE5013F5C34F00B5169E /* RareLogic.h */,
 			);
 			name = include;
@@ -222,7 +222,7 @@
 				4D72CD05144DF3AE00AFC947 /* JSON */,
 				A9E5866313F970B3002C692D /* Reachability.h */,
 				A9E5866413F970B3002C692D /* Reachability.m */,
-				A942AE5213F5C34F00B5169E /* RlEvent.m */,
+				A942AE5213F5C34F00B5169E /* RareLogicEvent.m */,
 				A942AE5313F5C34F00B5169E /* RareLogic.m */,
 			);
 			name = src;
@@ -370,7 +370,7 @@
 				4D72CD3E144DFE1700AFC947 /* RareLogicTestAppViewController.m in Sources */,
 				A9D0B92A13F9959B0060A1A0 /* RareLogicTestAppDelegate.m in Sources */,
 				A9CF77CA13FC30ED00B86962 /* Reachability.m in Sources */,
-				A9CF77CB13FC30ED00B86962 /* RlEvent.m in Sources */,
+				A9CF77CB13FC30ED00B86962 /* RareLogicEvent.m in Sources */,
 				A9CF77CC13FC30ED00B86962 /* RareLogic.m in Sources */,
 				4DECE40514588A0200F73619 /* NSData+Base64.m in Sources */,
 			);
@@ -381,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D0BA9F13F99DC30060A1A0 /* Reachability.m in Sources */,
-				A9D0BAA013F99DC30060A1A0 /* RlEvent.m in Sources */,
+				A9D0BAA013F99DC30060A1A0 /* RareLogicEvent.m in Sources */,
 				A9D0BAA113F99DC30060A1A0 /* RareLogic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

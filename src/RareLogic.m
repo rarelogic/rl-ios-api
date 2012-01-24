@@ -7,7 +7,7 @@
 #import "NSData+Base64.h"
 #import <UIKit/UIKit.h>
 
-#define FILE_NAME @"RlEvent"
+#define FILE_NAME @"RareLogicEvent"
 #define RARELOGIC_API_HOST_NAME @"d.rare.io"
 #define VERSION @"1.0"
 
@@ -93,8 +93,8 @@ static RareLogic* _instance;
 	}
 }
 
-- (void)record:(RlEvent*)event {
-	RlEvent* copy = [event copy];
+- (void)record:(RareLogicEvent*)event {
+	RareLogicEvent* copy = [event copy];
     
 	[copy set:@"rl" andName:@"timestamp" withNumberValue: [RareLogic getTimestamp]];
 	
@@ -180,23 +180,23 @@ static RareLogic* _instance;
     
 	[NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     
-	if ( [response statusCode] != 300) {
+	if ( [response statusCode] != 200) {
         if ( error != nil ) {
             NSLog(@"[RareLogic] Connection failed: %@", [error localizedDescription]);
         }
 		
-//		@synchronized (_queue) {
-//			NSArray* new = [_queue copy];
-//            
-//			[_queue removeAllObjects];
-//			[_queue addObjectsFromArray: sending];
-//			[_queue addObjectsFromArray: new];
-//            
-//			while (_queue.count > _queueDepth)
-//				[_queue removeObjectAtIndex: 0];
-//            
-//			[new release];
-//		}
+		@synchronized (_queue) {
+			NSArray* new = [_queue copy];
+            
+			[_queue removeAllObjects];
+			[_queue addObjectsFromArray: sending];
+			[_queue addObjectsFromArray: new];
+            
+			while (_queue.count > _queueDepth)
+				[_queue removeObjectAtIndex: 0];
+            
+			[new release];
+		}
 	}
 	
 	[sending release];

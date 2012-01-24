@@ -7,7 +7,7 @@
 //
 
 #import "RareLogicTestAppViewController.h"
-#import "RlEvent.h"
+#import "RareLogicEvent.h"
 
 @implementation RareLogicTestAppViewController
 
@@ -50,7 +50,7 @@
 }
 
 - (IBAction)click {
-    RlEvent* event = [[RlEvent alloc] init];
+    RareLogicEvent* event = [[RareLogicEvent alloc] init];
     
     [event set: @"content" andName: @"page" withStringValue: @"Blog Homepage"];
     [event set: @"content" andName: @"category" withStringValue: @"Blog Pages"];

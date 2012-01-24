@@ -1,17 +1,17 @@
 //  Created by Alejandro Isaza on 11-08-12.
 //  Copyright 2011 Preterra Corp. All rights reserved.
 
-#import "RlEvent.h"
+#import "RareLogicEvent.h"
 #import "RareLogic.h"
 #import "SBJson.h"
 
-@interface RlEvent ()
+@interface RareLogicEvent ()
 
 - (NSString*)getAttributeName:(NSString*)attrFamily andName:(NSString*)attrName;
 
 @end
 
-@implementation RlEvent
+@implementation RareLogicEvent
 
 - (id)init {
 	self = [super init];
@@ -83,7 +83,7 @@
 #pragma mark NSCopying
 
 - (id)copyWithZone:(NSZone*)zone {
-	RlEvent* copy = [[RlEvent allocWithZone:zone] init];
+	RareLogicEvent* copy = [[RareLogicEvent allocWithZone:zone] init];
 	[copy->_attributes release];
 	copy->_attributes = [_attributes mutableCopyWithZone:zone];
 	return copy;

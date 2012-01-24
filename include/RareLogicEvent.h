@@ -4,7 +4,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface RlEvent : NSObject <NSCopying, NSCoding> {
+@interface RareLogicEvent : NSObject <NSCopying, NSCoding> {
 	NSMutableDictionary* _attributes;
 }
 

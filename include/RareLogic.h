@@ -2,7 +2,7 @@
 //  Copyright 2011 Preterra Corp. All rights reserved.
 
 #import <Foundation/Foundation.h>
-#import "RlEvent.h"
+#import "RareLogicEvent.h"
 
 #define RARELOGIC_NETWORK_WIFI 1
 #define RARELOGIC_NETWORK_WIRELESS 2
@@ -26,6 +26,6 @@
 + (id)sharedInstance;
 + (id)sharedInstanceWithProfile:(NSString*)profile;
 
-- (void)record:(RlEvent*)event;
+- (void)record:(RareLogicEvent*)event;
 
 @end
